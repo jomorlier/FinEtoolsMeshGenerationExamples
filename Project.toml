@@ -1,0 +1,6 @@
+authors = ["Petr <pkrysl@ucsd.edu>"]
+name = "FinEtoolsMeshGenerationExamples"
+uuid = "58fc3492-bc71-11e8-306e-f73c99186842"
+version = "0.1.0"
+
+[deps]

@@ -32,7 +32,7 @@ function remesh1()
     setlabel!(fes, tmid)
     geom  =  NodalField(fens.xyz)
     
-    femm  =  FEMMBase(IntegData(fes, SimplexRule(3, 1)))
+    femm  =  FEMMBase(IntegDomain(fes, SimplexRule(3, 1)))
     V = integratefunction(femm, geom, (x) ->  1.0)
     println("V = $(V) compared to $(L * W * a)")
     
